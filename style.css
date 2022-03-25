@@ -1,0 +1,6 @@
+body {
+  background-image: url("./imgs/back2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
