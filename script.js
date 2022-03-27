@@ -53,7 +53,7 @@ function cart(key) {
         <h2 id="productname">${product_name}</h2>
         <h2 id="productprice">${product_price} K.D</h2>
         <div class="closebutton" id="close" onclick="closeproduct(), Minus()">
-        <h3 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white; font-size: 32px">X</h3>
+        <h3 style="color: white; font-size: 20px">X</h3>
     </div>`;
 
   total = total + product_price;
@@ -67,22 +67,22 @@ function closeproduct() {
   document.getElementById("cart").remove();
 }
 
-let count = 0;
+let many = 0;
 
 function calculate() {
-  count++;
+  many++;
 
-  console.log(count);
+  console.log(many);
 
   document.getElementById(
     "number"
-  ).innerHTML = `<h1>the number of orders is:${count}</h1>`;
+  ).innerHTML = `<h1>the number of orders is:${many}</h1>`;
 }
 
 function Minus() {
-  count--;
+  many--;
 
   document.getElementById(
     "number"
-  ).innerHTML = `<h1>the number of orders is:${count}</h1>`;
+  ).innerHTML = `<h1>the number of orders is:${many}</h1>`;
 }
