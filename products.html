@@ -40,7 +40,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./products.html">Products</a>
@@ -65,9 +67,14 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
+            <a class="navbar-brand" href="#cart-list">
+              <img
+                src="./imgs/-shopping-cart_90604.png"
+                alt=""
+                width="30"
+                height="24"
+              />
+            </a>
           </ul>
           <form class="d-flex">
             <input
@@ -87,46 +94,56 @@
     <div class="card-container">
       <div class="cardd">
         <img src="./imgs/aot.jpg" class="imgcard" />
-        <p>aot</p>
-        <p>5 K.D</p>
+        <p>aot manga</p>
+        <p>7 K.D</p>
+        <button class="btncard" id="aot" onclick="cart('aot'), calculate()">
+          <h5>add to cart</h5>
+        </button>
+      </div>
+
+      <div class="cardd">
+        <img src="./imgs/One-piece-manga.jpg" class="imgcard" />
+        <p>one One-piece-manga</p>
+        <p>7 K.D</p>
         <button
           class="btncard"
-          id="indomie h1"
-          onclick="cart('aot'), calculate()"
+          id="one_piece"
+          onclick="cart('one_piece'), calculate()"
         >
           <h5>add to cart</h5>
         </button>
       </div>
 
       <div class="cardd">
-        <img src="./images/Juice.png" class="imgcard" />
-        <p>Cocktail juice x3</p>
-        <p>1 K.D</p>
-        <button class="btncard" id="juice" onclick="cart('juice'), calculate()">
-          <h5>add to cart</h5>
-        </button>
-      </div>
-
-      <div class="cardd">
-        <img src="./images/Nuggets.png" class="imgcard" />
-        <p>Chicken nuggets</p>
-        <p>1.5 K.D</p>
+        <img src="./imgs/naruto.jpg" class="imgcard" />
+        <p>Naruto</p>
+        <p>7 K.D</p>
         <button
           class="btncard"
-          id="nuggets"
-          onclick="cart('nuggets'), calculate() "
+          id="Naruto"
+          onclick="cart('Naruto'), calculate() "
         >
           <h5>add to cart</h5>
         </button>
       </div>
     </div>
-    <div id="cart-list"></div>
+    <div id="cart-list" style="background-color: rgb(46, 42, 42)">
+      <h1 style="align-items: center; color: white">cart-list</h1>
+      <br />
+    </div>
+    <div
+      id="total"
+      style="color: white; background-color: rgb(46, 42, 42)"
+    ></div>
+    <div id="number" style="color: white; background-color: rgb(46, 42, 42)">
+      <h1>the number of orders is:</h1>
+    </div>
 
-    <!-- <script
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
-    ></script> -->
+    ></script>
     <script src="./script.js"></script>
   </body>
 </html>
